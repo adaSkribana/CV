@@ -59,6 +59,10 @@ body.dark-mode {
 .dark-mode h4 {
   color: #ffffff;
 }
+/* CORRECCIÓN: Estilo para la clase .text-muted en modo oscuro */
+.dark-mode .text-muted {
+  color: #adb5bd !important; /* Un gris más claro y legible para fondos oscuros */
+}
 
 /* Imagen del header */
 header img {
