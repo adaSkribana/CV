@@ -1,0 +1,148 @@
+/* Fuente principal */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffffff;
+  color: #212529;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding-bottom: 4rem; /* espacio extra antes del footer */
+}
+
+/* Dark mode */
+body.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+.dark-mode .card {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  border-color: #2c2c2c;
+}
+
+.dark-mode .btn-outline-dark {
+  border-color: #f0f0f0;
+  color: #f0f0f0;
+}
+
+.dark-mode .btn-outline-dark:hover {
+  background-color: #f0f0f0;
+  color: #121212;
+}
+
+.dark-mode .btn-outline-success {
+  border-color: #25d366;
+  color: #25d366;
+}
+
+.dark-mode .btn-outline-success:hover {
+  background-color: #25d366;
+  color: #121212;
+}
+
+.dark-mode .btn-outline-primary {
+  border-color: #0a66c2;
+  color: #0a66c2;
+}
+
+.dark-mode .btn-outline-primary:hover {
+  background-color: #0a66c2;
+  color: #ffffff;
+}
+
+.dark-mode .navbar {
+  background-color: #1c1c1c !important;
+}
+
+.dark-mode h1, 
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode h4 {
+  color: #ffffff;
+}
+
+/* Imagen del header */
+header img {
+  max-height: 100px;
+  border-radius: 10px;
+}
+
+/* Footer */
+footer .card {
+  margin: 0 auto;
+  max-width: 500px;
+  border: none;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+footer .card-body {
+  padding: 1.5rem 1rem;
+}
+
+footer .card-footer {
+  background-color: transparent;
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+/* Botones sociales */
+footer .btn {
+  font-size: 1.2rem;
+  width: 45px;
+  height: 45px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+footer .btn:hover {
+  transform: scale(1.1);
+}
+
+footer .btn-outline-dark:hover {
+  background-color: #212529;
+  color: #fff;
+}
+
+footer .btn-outline-success:hover {
+  background-color: #25d366;
+  color: #fff;
+}
+
+footer .btn-outline-primary:hover {
+  background-color: #0a66c2;
+  color: #fff;
+}
+
+/* Encabezados */
+h1 {
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+h2 {
+  font-weight: 300;
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+/* Listas */
+ul {
+  padding-left: 1.2rem;
+}
+
+/* Responsive ajustes opcionales */
+@media (max-width: 576px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+  header h2 {
+    font-size: 1rem;
+  }
+  footer .btn {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+}
