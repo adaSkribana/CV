@@ -15,7 +15,9 @@
   <meta name="twitter:card" content="summary_large_image">
 
   <!-- Fuentes y estilos -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@500;600&display=swap"
+    rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="assets/css/style.css">
@@ -39,15 +41,13 @@
           <div class="col-auto">
             <!-- Toggle modo oscuro -->
             <div class="theme-toggle d-flex align-items-center">
-              <input type="checkbox" id="toggle-dark-mode" hidden>
-              <label for="toggle-dark-mode" class="d-flex align-items-center" style="cursor: pointer;">
+              <input class="form-check-input" type="checkbox" id="darkModeSwitch" aria-label="Alternar modo oscuro">
+              <label for="darkModeSwitch" class="d-flex align-items-center toggle-label" style="cursor: pointer;">
                 <i class="fas fa-sun me-2"></i>
-                <div class="form-check form-switch m-0">
-                  <input class="form-check-input" type="checkbox" id="darkModeSwitch">
-                </div>
                 <i class="fas fa-moon ms-2"></i>
               </label>
             </div>
+
           </div>
         </div>
       </div>
@@ -77,7 +77,7 @@
     </section>
 
     <section class="mt-4">
-      <h2>Informacion Adicional</h2>
+      <h2>Información Adicional</h2>
       <ul>
         <li><strong>Nacionalidad:</strong> Chilena</li>
         <li><strong>País de residencia:</strong> Chile</li>
@@ -87,9 +87,11 @@
 
     <section class="mt-4">
       <h2>Formación</h2>
-      <li>Autodidacta - Fundación Soy Más- Lógica de programación</li>
-      <li>Sence - Sustantiva spa - FullStack Python Django</li>
-      <li>Academia Latam - Especialización Frontend - En curso</li>
+      <ul>
+        <li>Autodidacta - Fundación Soy Más - Lógica de programación</li>
+        <li>Sence - Sustantiva spa - FullStack Python Django</li>
+        <li>Academia Latam - Especialización Frontend - En curso</li>
+      </ul>
     </section>
 
     <section class="mt-4 text-center">
@@ -98,38 +100,8 @@
         Ir a mi sitio personal
       </a>
     </section>
-    
-  </main>
 
-  <!-- Footer -->
-  <footer class="mt-5">
-    <div class="container">
-      <div class="card text-center">
-        <div class="card-body">
-          <div class="card-footer text-muted">
-            Cóntactemonos
-          </div>
-          <div class="d-flex justify-content-center gap-4">
-            <a href="https://github.com/adaSkribana" target="_blank" class="btn btn-outline-dark rounded-circle"
-              aria-label="GitHub">
-              <i class="fab fa-github"></i>
-            </a>
-            <a href="https://web.whatsapp.com/send?phone=56920400733&text=Hola,%20Me%20quiero%20comunicar%20con%20Marjorie%20"
-              target="_blank" class="btn btn-outline-success rounded-circle" aria-label="WhatsApp">
-              <i class="fab fa-whatsapp"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/marjorie-ramirez-51435829b/" target="_blank"
-              class="btn btn-outline-primary rounded-circle" aria-label="LinkedIn">
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-          </div>
-        </div>
-        <div class="card-footer text-muted">
-          Todos los derechos reservados © Marjorie Ramírez
-        </div>
-      </div>
-    </div>
-  </footer>
+  </main>
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
