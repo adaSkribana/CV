@@ -1,11 +1,48 @@
 /* Fuente principal */
+/* Fuente general */
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Inter', sans-serif;
   background-color: #ffffff;
   color: #212529;
   transition: background-color 0.3s ease, color 0.3s ease;
-  padding-bottom: 4rem; /* espacio extra antes del footer */
 }
+
+/* Encabezados con estilo elegante */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+}
+
+/* Puedes ajustar tamaños y estilos si quieres más diferenciación */
+
+/* Botón personalizado compatible con modo claro y oscuro */
+.personal-btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #4f46e5, #6366f1);
+  color: white;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.personal-btn:hover {
+  background: linear-gradient(135deg, #4338ca, #4f46e5);
+  transform: translateY(-2px);
+}
+
+/* Oscuro: que el fondo destaque y el texto siga legible */
+body.dark-mode .personal-btn {
+  background: linear-gradient(135deg, #818cf8, #a5b4fc);
+  color: #111;
+}
+
+body.dark-mode .personal-btn:hover {
+  background: linear-gradient(135deg, #6366f1, #818cf8);
+}
+
 
 /* Dark mode */
 body.dark-mode {
@@ -119,17 +156,6 @@ footer .btn-outline-primary:hover {
   color: #fff;
 }
 
-/* Encabezados */
-h1 {
-  font-weight: 500;
-  font-size: 2rem;
-}
-
-h2 {
-  font-weight: 300;
-  font-size: 1.5rem;
-  margin-top: 1.5rem;
-}
 
 /* Listas */
 ul {
